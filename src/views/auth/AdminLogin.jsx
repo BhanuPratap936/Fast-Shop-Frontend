@@ -25,7 +25,7 @@ const AdminLogin = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(admin_login(state))
-        console.log(state);
+        // console.log(state);
     };
 
     

@@ -9,7 +9,7 @@ export const admin_login = createAsyncThunk(
             const { data } = await api.post('/admin-login', info, {
                 withCredentials: true
             })
-            console.log(data);
+            // console.log(data);
             localStorage.setItem('accessToken', data.token)
             return fulfillWithValue(data)
 
@@ -27,7 +27,7 @@ export const seller_login = createAsyncThunk(
             const { data } = await api.post('/seller-login', info, {
                 withCredentials: true
             })
-            console.log(data);
+            // console.log(data);
             localStorage.setItem('accessToken', data.token)
             return fulfillWithValue(data)
 
